@@ -11,12 +11,12 @@ btn.addEventListener("click",function(){
         liste.appendChild(li)
         let btn1 = document.createElement('button')
         btn1.className="del"
-        btn1.textContent="del"
+        btn1.textContent="fait"
         li.appendChild(btn1)
         let del=document.querySelectorAll(".del")
         for (let i = 0; i < del.length; i++) {
             del[i].addEventListener("click",function(){
-                del[i].parentElement.remove()
+                del[i].parentElement.className="border fait"
             })
         }
         let up = document.createElement('button')
@@ -36,6 +36,28 @@ btn.addEventListener("click",function(){
         })
         buttondowns.addEventListener("click", function(){
             (buttondowns.parentElement).nextElementSibling.insertAdjacentElement("afterend", buttondowns.parentElement);
+        })
+        let btnt=document.querySelector(".btnt")
+        btnt.addEventListener("click",function(){
+            li.style.display="block"
+        })
+        let btnf=document.querySelector(".btnf")
+        btnf.addEventListener("click",function(){
+            if(li.className!="border fait"){
+                li.style.display="none"
+            }
+            else{
+                li.style.display="block"
+            }
+        })
+        let btnpf=document.querySelector(".btnpf")
+        btnpf.addEventListener("click",function(){
+            if(li.className=="border fait"){
+                li.style.display="none"
+            }
+            else{
+                li.style.display="block"
+            }
         })
     }
     else{

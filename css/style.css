@@ -23,3 +23,10 @@ input{
 .del,.up,.down{
     height: 2.5rem;
 }
+.f{
+    height: 5rem;
+    display: flex;
+}
+.btnt,.btnf,.btnpf{
+    width: 20rem;
+}
