@@ -1,0 +1,25 @@
+html{
+    font-size: 62.5%;
+}
+div{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.border{
+    border: 1px black solid;
+}
+p{
+    font-size: 1.6rem;
+}
+input{
+    width: 25rem;
+    margin: 1rem;
+}
+.del,.up,.down{
+    height: 2.5rem;
+}
