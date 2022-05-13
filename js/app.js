@@ -13,10 +13,27 @@ btn.addEventListener("click",function(){
         btn1.className="del"
         btn1.textContent="fait"
         li.appendChild(btn1)
+        let btn2 = document.createElement('button')
+        btn2.className="pf"
+        btn2.textContent="pas fait"
+        li.appendChild(btn2)
+        let pf=document.querySelectorAll(".pf")
+        for(let i=0;i<pf.length;i++){
+            pf[i].className="pf none"
+        }
         let del=document.querySelectorAll(".del")
         for (let i = 0; i < del.length; i++) {
             del[i].addEventListener("click",function(){
                 del[i].parentElement.className="border fait"
+                del[i].className="del none"
+                pf[i].className="pf block"
+            })
+        }
+        for (let i = 0; i < pf.length; i++) {
+            pf[i].addEventListener("click",function(){
+                pf[i].parentElement.className="border"
+                pf[i].className="pf none"
+                del[i].className="del block"
             })
         }
         let up = document.createElement('button')

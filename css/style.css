@@ -20,7 +20,7 @@ input{
     width: 25rem;
     margin: 1rem;
 }
-.del,.up,.down{
+.del,.up,.down,.pf{
     height: 2.5rem;
 }
 .f{
@@ -29,4 +29,10 @@ input{
 }
 .btnt,.btnf,.btnpf{
     width: 20rem;
+}
+.none{
+    display: none;
+}
+.block{
+    display: inline-block;
 }
